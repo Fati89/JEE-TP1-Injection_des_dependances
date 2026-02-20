@@ -1,11 +1,12 @@
 package pres;
 
 import dao.DaoImpl;
+import dao.DaoImplV2;
 import metier.MetierImpl;
 
 public class Pres1 {
     static void main(String[] args) {
-        DaoImpl d = new DaoImpl();
+        DaoImplV2 d = new DaoImplV2();
         MetierImpl metier = new MetierImpl(d);
         // metier.setDao(d); // Injection via setter
 
