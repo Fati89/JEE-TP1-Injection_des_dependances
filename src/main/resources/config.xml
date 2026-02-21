@@ -8,6 +8,10 @@
     <bean id="dao" class="dao.DaoImpl"></bean>
     <bean id="metier" class="metier.MetierImpl">
         <property name="dao" ref="dao"></property>
+        <!--
+        on instancie la classe MertierImpl en appelant le constructeur avec parametre au quel on transmet dao
+        <constructor-arg ref="dao"></constructor-arg>
+        -->
     </bean>
 
 </beans>
